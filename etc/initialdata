@@ -1,3 +1,11 @@
+@CustomFields = (
+    {   Name        => 'ResetPasswordAuthProvider',
+        Description => 'Contains name of external authentication source to reset users password in',
+        Type        => 'FreeformSingle',
+        LookupType  => 'RT::User',
+    },
+);
+
 @Templates = (
     { Queue       => '0',
       Name        => 'PasswordReset',
